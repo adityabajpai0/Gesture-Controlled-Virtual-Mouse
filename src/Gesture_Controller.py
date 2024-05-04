@@ -138,7 +138,8 @@ class HandRecog:
         return abs(self.hand_result.landmark[point[0]].z - self.hand_result.landmark[point[1]].z)
     
     # Function to find Gesture Encoding using current finger_state.
-    # Finger_state: 1 if finger is open, else 0
+    # Finger_s
+    # tate: 1 if finger is open, else 0
     def set_finger_state(self):
         """
         set 'finger' by computing ratio of distance between finger tip 
@@ -596,5 +597,5 @@ class GestureController:
         cv2.destroyAllWindows()
 
 # uncomment to run directly
-# gc1 = GestureController()
-# gc1.start()
+gc1 = GestureController()
+gc1.start()
